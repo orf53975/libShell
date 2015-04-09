@@ -2,4 +2,4 @@
 from modules import *
 from core import *
 #from exfil import *
-#from info import *
+from info import *
