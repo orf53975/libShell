@@ -6,4 +6,3 @@ def pastebin(data, expire_time):
 	response = urllib.urlopen('http://pastebin.com/api/api_post.php', urllib.urlencode(pastebin_vars))
 	url = response.read()
 	return url
-	print url
