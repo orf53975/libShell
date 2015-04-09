@@ -1,2 +1,5 @@
 #!/usr/bin/python
-from execute import *
+from modules import *
+from core import *
+#from exfil import *
+from info import *
