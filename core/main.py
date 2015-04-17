@@ -21,4 +21,5 @@ motd = """
 """
 
 def gettime():
-	print date + ' ' + time
+	return date + ' ' + time
+
